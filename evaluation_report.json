@@ -1,0 +1,289 @@
+{
+  "timestamp": "2026-10-12 11:28:11",
+  "total_test_cases": 7,
+  "passed_test_cases": 6,
+  "pass_rate_percentage": 85.7,
+  "average_latency_seconds": 5.64,
+  "average_top_retrieval_relevance": 0.699,
+  "languages_tested": [
+    "English",
+    "Telugu",
+    "Hindi",
+    "Kannada",
+    "Tamil"
+  ],
+  "detailed_results": [
+    {
+      "test_id": "TC-01",
+      "category": "Troubleshooting (Error 301)",
+      "language": "en",
+      "language_name": "English",
+      "query": "How do I fix Error 301 Signal Not Found on my Dish TV?",
+      "answer_snippet": "Error 301 Signal Not Found usually means your dish antenna has lost alignment or the cable connection is loose.\n\n1. **Check Cable Connections** — Ensure the coaxial cable from the dish to your set-top box is tightly connected at both ends.\n2. **Inspect Dish Alignment** — Confirm the outdoor dish has...",
+      "citations_count": 1,
+      "citations": [
+        {
+          "title": "Quick Help: Get 3 days credit",
+          "url": "https://dishtv.biztechnosys.com/Get-Help",
+          "category": "Troubleshooting & Quick Help",
+          "relevance_score": 0.634
+        }
+      ],
+      "top_similarity_score": 0.634,
+      "grounding_pass": true,
+      "grounding_score": 0.71,
+      "latency_seconds": 4.96,
+      "metrics": {
+        "total_latency_seconds": 2.79,
+        "embed_latency_seconds": 0.302,
+        "search_latency_seconds": 0.0,
+        "llm_latency_seconds": 2.49,
+        "model": "deepseek-chat",
+        "tokens": {
+          "prompt_tokens": 2488,
+          "completion_tokens": 163,
+          "total_tokens": 2651,
+          "prompt_tokens_details": {
+            "cached_tokens": 384
+          },
+          "prompt_cache_hit_tokens": 384,
+          "prompt_cache_miss_tokens": 2104
+        }
+      }
+    },
+    {
+      "test_id": "TC-02",
+      "category": "Recharge & Error 101/102 (Telugu)",
+      "language": "te",
+      "language_name": "Telugu",
+      "query": "నా డిష్ టీవీలో ఎర్రర్ 102 వస్తోంది, దీన్ని ఎలా పరిష్కరించాలి మరియు సర్వీస్ ఎలా ప్రారంభించాలి?",
+      "answer_snippet": "ఎర్రర్ 102 సమస్యను పరిష్కరించడానికి మీ సెట్ టాప్ బాక్స్ ఆన్ చేసి ఉంచి మిస్డ్ కాల్ ఇవ్వాలి.\n\n1. **మిస్డ్ కాల్ ఇవ్వండి** — **1800-270-2102** నంబర్కు మిస్డ్ కాల్ ఇచ్చి, మీ సెట్ టాప్ బాక్స్ను ఆన్ చేసి 15 నిమిషాలు ఉంచండి.\n2. **సర్వీస్ ప్రారంభం** — ఈ 15 నిమిషాల్లో సర్వీస్ ఆటోమేటిక్గా రీఫ్రెష్ అయ్యి ఛానెల్...",
+      "citations_count": 1,
+      "citations": [
+        {
+          "title": "Quick Help: 101/102 Error",
+          "url": "https://dishtv.biztechnosys.com/Get-Help",
+          "category": "Troubleshooting & Quick Help",
+          "relevance_score": 0.759
+        }
+      ],
+      "top_similarity_score": 0.759,
+      "grounding_pass": true,
+      "grounding_score": 0.8,
+      "latency_seconds": 6.08,
+      "metrics": {
+        "total_latency_seconds": 3.65,
+        "embed_latency_seconds": 0.267,
+        "search_latency_seconds": 0.0,
+        "llm_latency_seconds": 3.38,
+        "model": "deepseek-chat",
+        "tokens": {
+          "prompt_tokens": 2558,
+          "completion_tokens": 393,
+          "total_tokens": 2951,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "prompt_cache_hit_tokens": 512,
+          "prompt_cache_miss_tokens": 2046
+        }
+      }
+    },
+    {
+      "test_id": "TC-03",
+      "category": "New Connection Plans & Cashback (Hindi)",
+      "language": "hi",
+      "language_name": "Hindi",
+      "query": "डिश टीवी के नए कनेक्शन प्लान और कैशबैक ऑफर क्या हैं?",
+      "answer_snippet": "डिश टीवी के नए कनेक्शन में तीन मुख्य प्लान उपलब्ध हैं, जिनमें कैशबैक ऑफर सबसे आकर्षक है।\n\n1. **HD Cashback Plan** — ₹2,287* में कनेक्शन, कुल ₹3,600 कैशबैक मिलता है।\n2. **कैशबैक विवरण** — ₹1,000 तुरंत कैशबैक, हर रिचार्ज पर 10% कैशबैक (अधिकतम ₹2,600), और कैशबैक की लाइफटाइम वैलिडिटी।\n3. **HD Plan With ...",
+      "citations_count": 1,
+      "citations": [
+        {
+          "title": "Plan: HD Cashback Plan",
+          "url": "https://dishtv.biztechnosys.com/Get-a-Connection",
+          "category": "Connection Plans & Booking",
+          "relevance_score": 0.724
+        }
+      ],
+      "top_similarity_score": 0.724,
+      "grounding_pass": true,
+      "grounding_score": 0.8,
+      "latency_seconds": 5.69,
+      "metrics": {
+        "total_latency_seconds": 2.87,
+        "embed_latency_seconds": 0.302,
+        "search_latency_seconds": 0.0,
+        "llm_latency_seconds": 2.56,
+        "model": "deepseek-chat",
+        "tokens": {
+          "prompt_tokens": 2627,
+          "completion_tokens": 314,
+          "total_tokens": 2941,
+          "prompt_tokens_details": {
+            "cached_tokens": 1024
+          },
+          "prompt_cache_hit_tokens": 1024,
+          "prompt_cache_miss_tokens": 1603
+        }
+      }
+    },
+    {
+      "test_id": "TC-04",
+      "category": "STB Dongle Device (Kannada)",
+      "language": "kn",
+      "language_name": "Kannada",
+      "query": "ಡಿಶ್ ಟಿವಿ STB ಡಾಂಗಲ್ ಎಂದರೇನು ಮತ್ತು ಅದರ ಬೆಲೆ ಎಷ್ಟು?",
+      "answer_snippet": "ಡಿಶ್ ಟಿವಿ STB ಡಾಂಗಲ್ ಎಂಬುದು ನಿಮ್ಮ Android ಅಥವಾ Google TV ಗೆ ನೇರ ಟಿವಿ ಚಾನೆಲ್ಗಳನ್ನು ತಲುಪಿಸುವ ಸಾಧನವಾಗಿದೆ, ಇದರ ಬೆಲೆ ₹2,499* ಆಗಿದೆ.\n\n1. **ಬೆಲೆ ಮತ್ತು ಪ್ಯಾಕ್** — Dish TV Smart+ Dongle ಕೇವಲ ₹2,499* ರಲ್ಲಿ ಲಭ್ಯವಿದೆ, ಜೊತೆಗೆ 3 ತಿಂಗಳ ಟಿವಿ ಮತ್ತು OTT ಪ್ಯಾಕ್ ಒಳಗೊಂಡಿದೆ.\n2. **ವೈಶಿಷ್ಟ್ಯ** — ಒಂದೇ ಇಂಟರ್ಫೇಸ್ನಲ್ಲಿ OTT ಆ್ಯ...",
+      "citations_count": 1,
+      "citations": [
+        {
+          "title": "DishTV STB Dongle",
+          "url": "https://dishtv.biztechnosys.com/Products/DishTV-STB-Dongle",
+          "category": "Products & Hardware",
+          "relevance_score": 0.77
+        }
+      ],
+      "top_similarity_score": 0.77,
+      "grounding_pass": false,
+      "grounding_score": 0.2,
+      "latency_seconds": 6.75,
+      "metrics": {
+        "total_latency_seconds": 3.84,
+        "embed_latency_seconds": 0.341,
+        "search_latency_seconds": 0.0,
+        "llm_latency_seconds": 3.5,
+        "model": "deepseek-chat",
+        "tokens": {
+          "prompt_tokens": 1517,
+          "completion_tokens": 382,
+          "total_tokens": 1899,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "prompt_cache_hit_tokens": 512,
+          "prompt_cache_miss_tokens": 1005
+        }
+      }
+    },
+    {
+      "test_id": "TC-05",
+      "category": "3-Days Credit & Quick Help (Tamil)",
+      "language": "ta",
+      "language_name": "Tamil",
+      "query": "டிஷ் டிவியில் 3 நாட்கள் அவசர கடன் பெறுவது எப்படி?",
+      "answer_snippet": "3 நாட்கள் அவசர கடன் பெற **1800-274-9050** என்ற எண்ணுக்கு மிஸ்டு கால் கொடுக்கவும்.\n\n1. **மிஸ்டு கால்** — 1800-274-9050 என்ற எண்ணுக்கு மிஸ்டு கால் கொடுத்தால் 3 நாட்கள் கூடுதல் டிவி பார்வை கிடைக்கும்.\n2. **கட்டண விவரம்** — 3 நாட்களுக்கான கட்டணமும் ₹10 சேவை கட்டணமும் உங்கள் அடுத்த ரீசார்ஜில் சேர்க்கப்பட...",
+      "citations_count": 1,
+      "citations": [
+        {
+          "title": "Quick Help: Get 3 days credit",
+          "url": "https://dishtv.biztechnosys.com/Get-Help",
+          "category": "Troubleshooting & Quick Help",
+          "relevance_score": 0.694
+        }
+      ],
+      "top_similarity_score": 0.694,
+      "grounding_pass": true,
+      "grounding_score": 1.0,
+      "latency_seconds": 5.04,
+      "metrics": {
+        "total_latency_seconds": 3.18,
+        "embed_latency_seconds": 0.259,
+        "search_latency_seconds": 0.0,
+        "llm_latency_seconds": 2.92,
+        "model": "deepseek-chat",
+        "tokens": {
+          "prompt_tokens": 2348,
+          "completion_tokens": 288,
+          "total_tokens": 2636,
+          "prompt_tokens_details": {
+            "cached_tokens": 896
+          },
+          "prompt_cache_hit_tokens": 896,
+          "prompt_cache_miss_tokens": 1452
+        }
+      }
+    },
+    {
+      "test_id": "TC-06",
+      "category": "Absent / Out-of-Domain Anti-Hallucination Test",
+      "language": "en",
+      "language_name": "English",
+      "query": "Can you give me a recipe to bake chocolate cookies using Dish TV?",
+      "answer_snippet": "Dish TV is a satellite television service and does not provide baking recipes or cooking instructions.\n\n1. **Not a Cooking Service** — Dish TV delivers TV channels, streaming apps, and hardware such as DishTV HD, DishTV Key, and the VZY 75-inch Google TV.\n2. **Where to Find Recipes** — Please use a ...",
+      "citations_count": 2,
+      "citations": [
+        {
+          "title": "DishTV - Choose from Curated Offerings",
+          "url": "https://dishtv.biztechnosys.com",
+          "category": "General Information & Offerings",
+          "relevance_score": 0.553
+        },
+        {
+          "title": "Products",
+          "url": "https://dishtv.biztechnosys.com/Products",
+          "category": "Products & Hardware",
+          "relevance_score": 0.547
+        }
+      ],
+      "top_similarity_score": 0.553,
+      "grounding_pass": true,
+      "grounding_score": 1.0,
+      "latency_seconds": 4.78,
+      "metrics": {
+        "total_latency_seconds": 2.58,
+        "embed_latency_seconds": 0.265,
+        "search_latency_seconds": 0.0,
+        "llm_latency_seconds": 2.31,
+        "model": "deepseek-chat",
+        "tokens": {
+          "prompt_tokens": 1509,
+          "completion_tokens": 167,
+          "total_tokens": 1676,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "prompt_cache_hit_tokens": 512,
+          "prompt_cache_miss_tokens": 997
+        }
+      }
+    },
+    {
+      "test_id": "TC-07",
+      "category": "Quick Help & 101/102 Error (Gujarati)",
+      "language": "gu",
+      "language_name": "Gujarati",
+      "query": "ડિશ ટીવીમાં એરર 101 અને 102 નું નિવારણ કેવી રીતે કરવું?",
+      "answer_snippet": "એરર 101/102 નું નિવારણ માટે મિસ્ડ કોલ આપી બોક્સ 15 મિનિટ ચાલુ રાખવું પડે છે.\n\n1. **મિસ્ડ કોલ આપો** — 1800-270-2102 નંબર પર મિસ્ડ કોલ આપો.\n2. **બોક્સ ચાલુ રાખો** — સેટ-ટોપ બોક્સ 15 મિનિટ સુધી ચાલુ રાખો, સેવા આપોઆપ ચાલુ થશે.\n3. **હેલ્પલાઇન** — સમસ્યા ચાલુ રહે તો +91-95017-95017 અથવા 1800-120-3474 પર સ...",
+      "citations_count": 1,
+      "citations": [
+        {
+          "title": "Quick Help: 101/102 Error",
+          "url": "https://dishtv.biztechnosys.com/Get-Help",
+          "category": "Troubleshooting & Quick Help",
+          "relevance_score": 0.759
+        }
+      ],
+      "top_similarity_score": 0.759,
+      "grounding_pass": true,
+      "grounding_score": 0.8,
+      "latency_seconds": 6.15,
+      "metrics": {
+        "total_latency_seconds": 3.48,
+        "embed_latency_seconds": 0.25,
+        "search_latency_seconds": 0.0,
+        "llm_latency_seconds": 3.23,
+        "model": "deepseek-chat",
+        "tokens": {
+          "prompt_tokens": 2540,
+          "completion_tokens": 318,
+          "total_tokens": 2858,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "prompt_cache_hit_tokens": 512,
+          "prompt_cache_miss_tokens": 2028
+        }
+      }
+    }
+  ]
+}

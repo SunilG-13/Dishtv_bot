@@ -1,0 +1,38 @@
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environment
+venv/
+env/
+.venv/
+ENV/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# TTS Audio runtime cache
+data/audio_cache/*.mp3
+!data/audio_cache/.gitkeep
+
+# Logs & temporary files
+*.log
+*.tmp
+*.temp
+.system_generated/
+.tempmediaStorage/
+
+# Operating system & IDE artifacts
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
