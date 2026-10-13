@@ -1,6 +1,6 @@
 """
 Content Processing and Chunking Module
-Cleans crawled data from https://dishtv.biztechnosys.com/, parses structured FAQs,
+Cleans crawled data from https://dishtv.live/, parses structured FAQs,
 connection plans, quick help actions, and splits text into clean semantic chunks
 with rich metadata for vector retrieval.
 """
@@ -88,7 +88,7 @@ class ContentCleaner:
         return chunks
 
     def process_page(self, page_data: Dict[str, Any]) -> List[Dict[str, Any]]:
-        """Processes a single page from dishtv.biztechnosys.com into chunks."""
+        """Processes a single page from dishtv.live into chunks."""
         url = page_data.get("url", "")
         title = page_data.get("title", "DISH TV Official")
         meta_desc = page_data.get("meta_description", "")

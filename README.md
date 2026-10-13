@@ -1,6 +1,6 @@
 # DISH TV Multilingual AI Assistant — Production RAG System
 
-An enterprise-ready AI Customer Support Knowledge Assistant for **DISH TV**, capable of answering customer questions in 6 regional Indian languages (**English, Hindi, Kannada, Telugu, Tamil, and Gujarati**) using real-time RAG (Retrieval-Augmented Generation) grounded strictly on official DishTV portal content: [https://dishtv.biztechnosys.com/](https://dishtv.biztechnosys.com/).
+An enterprise-ready AI Customer Support Knowledge Assistant for **DISH TV**, capable of answering customer questions in 6 regional Indian languages (**English, Hindi, Kannada, Telugu, Tamil, and Gujarati**) using real-time RAG (Retrieval-Augmented Generation) grounded strictly on official DishTV portal content: [https://dishtv.live/](https://dishtv.live/).
 
 ---
 
@@ -38,7 +38,7 @@ Dishtv_bot/
 │   └── main.py                # FastAPI endpoints (/api/chat, /api/health, /api/voice/..., etc.)
 ├── crawler/
 │   ├── __init__.py
-│   └── dishtv_crawler.py      # Web crawler for https://dishtv.biztechnosys.com/
+│   └── dishtv_crawler.py      # Web crawler for https://dishtv.live/
 ├── processor/
 │   ├── __init__.py
 │   └── content_cleaner.py     # HTML cleaner, FAQ extractor, and semantic text chunker
@@ -112,7 +112,7 @@ If you want to re-crawl and re-index the knowledge base:
 ```bash
 python build_index.py
 ```
-*Crawls official portal pages from `https://dishtv.biztechnosys.com/`, chunks text, generates BAAI/bge-m3 dense vectors, and saves `data/faiss_index/index.faiss`.*
+*Crawls official portal pages from `https://dishtv.live/`, chunks text, generates BAAI/bge-m3 dense vectors, and saves `data/faiss_index/index.faiss`.*
 
 ### 4. Start the Application Server
 ```bash

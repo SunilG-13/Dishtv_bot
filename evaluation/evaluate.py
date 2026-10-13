@@ -1,8 +1,8 @@
 """
-Comprehensive Evaluation Benchmark Module
+Comprehensive Evaluation Benchmark Module (Steps 13 & 14)
 Tests DISH TV Knowledge Bot across:
-- English, Telugu, Hindi, Kannada, Tamil, and Gujarati
-- Troubleshooting codes (101/102, 301, 401)
+- English, Telugu, Hindi, Kannada, Tamil
+- Troubleshooting codes (301, 102, 401, E16-4)
 - Viewing card refresh & channel management
 - Out-of-domain / Absent queries (anti-hallucination verification)
 - Metrics: Retrieval relevance, answer accuracy, latency, multilingual quality

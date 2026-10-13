@@ -1,7 +1,7 @@
 # 🎙️ DishTV Bot — Complete Test Questions in All Languages
 
 > [!NOTE]
-> All questions below are 100% grounded on the official website: **https://dishtv.biztechnosys.com/**.
+> All questions below are 100% grounded on the official website: **https://dishtv.live/**.
 > They cover all offerings, connection plans, hardware products (Dish HD, STB Dongle, DishTV KEY), troubleshooting & missed-call self-care numbers, channel modification, and customer care.
 > Copy any question below and paste or speak it into the chatbot to verify accuracy and multi-lingual retrieval.
 
@@ -305,4 +305,4 @@
 | **Total** | **204** | **28** | **232 Questions** |
 
 > [!TIP]
-> Each question directly queries a specific section of the live indexed database from `https://dishtv.biztechnosys.com/` and produces dynamic, grounded answers without any hardcoding.
+> Each question directly queries a specific section of the live indexed database from `https://dishtv.live/` and produces dynamic, grounded answers without any hardcoding.

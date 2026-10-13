@@ -72,7 +72,7 @@ def rebuild_database():
         from crawler.dishtv_crawler import DishTVCrawler
         from build_index import run_pipeline
 
-        print("--> Step 1/2: Crawling live site (https://dishtv.biztechnosys.com/)...")
+        print("--> Step 1/2: Crawling live site (https://dishtv.live/)...")
         crawler = DishTVCrawler()
         crawler.crawl_all(force_refresh=True)
 

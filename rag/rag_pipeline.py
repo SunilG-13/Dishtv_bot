@@ -1,7 +1,7 @@
 """
 RAG Pipeline Module
 Orchestrates: Customer Query -> BGE-M3 Embedding -> FAISS Retrieval -> Grounded Prompt -> DeepSeek API -> Answer + Citations
-Grounded on DISH TV Official Portal: https://dishtv.biztechnosys.com/
+Grounded on DISH TV Official Portal: https://dishtv.live/
 """
 import time
 import logging
@@ -71,7 +71,7 @@ def clean_answer_format(text: str) -> str:
     return "\n".join(cleaned_lines)
 
 
-# Professional Executive Multilingual Greetings for DishTV AI Assistant (Updated for dishtv.biztechnosys.com)
+# Professional Executive Multilingual Greetings for DishTV AI Assistant (Updated for dishtv.live)
 PROFESSIONAL_GREETINGS = {
     "en": (
         "Hello! I am your official DISH TV AI Assistant.\n\n"
@@ -162,7 +162,7 @@ class RagPipeline:
         lang_name = lang_info["name"]
         lang_native = lang_info["native"]
 
-        system_prompt = f"""You are the official DishTV AI Assistant for the DISH TV portal (https://dishtv.biztechnosys.com/).
+        system_prompt = f"""You are the official DishTV AI Assistant for the DISH TV portal (https://dishtv.live/).
 Your mission is to provide accurate, direct, complete, and professionally structured customer support in {lang_name} ({lang_native}).
 
 PROFESSIONAL RESPONSE FORMAT RULES (STRICT & MANDATORY):
@@ -183,7 +183,7 @@ PROFESSIONAL RESPONSE FORMAT RULES (STRICT & MANDATORY):
    - Know Account Balance: **1800 274 9000**
    - Activate Channel: **1800-568-XXXX** (replace XXXX with channel number)
    - Book VZY 75" Google TV: **1800 315 7189**
-   - Official Portal: **https://dishtv.biztechnosys.com/**
+   - Official Portal: **https://dishtv.live/**
 6. End with one short, polite next-step or helpful closing sentence.
 
 STRICT RULES:
@@ -193,7 +193,7 @@ STRICT RULES:
 - Do NOT use bullet points (•) or lone dots (.). Use clean numbered lists (1. 2. 3.) only.
 - Do NOT repeat information.
 - ALWAYS complete all sentences fully. Never cut off mid-sentence.
-- Ground all facts strictly in the DishTV context provided below from https://dishtv.biztechnosys.com/.
+- Ground all facts strictly in the DishTV context provided below from https://dishtv.live/.
 """
         return system_prompt
 
@@ -217,7 +217,7 @@ STRICT RULES:
         user_prompt = f"""CUSTOMER QUESTION:
 "{query}"
 
-OFFICIAL DISH TV KNOWLEDGE BASE CONTEXT (https://dishtv.biztechnosys.com/):
+OFFICIAL DISH TV KNOWLEDGE BASE CONTEXT (https://dishtv.live/):
 ----------------------------------------
 {context_str}
 ----------------------------------------
@@ -257,7 +257,7 @@ Answer in {lang_info['name']} ({lang_info['native']}). Be concise (under 150 wor
                 "citations": [
                     {
                         "title": "DISH TV Official Portal",
-                        "url": "https://dishtv.biztechnosys.com/",
+                        "url": "https://dishtv.live/",
                         "category": "Customer Support",
                         "relevance_score": 1.0
                     }

@@ -1,7 +1,7 @@
 """
 DISH TV Website Crawler Module
 Extracts products, plans, troubleshooting, FAQs, and service information
-from the official portal: https://dishtv.biztechnosys.com/
+from the official portal: https://dishtv.live/
 """
 import os
 import re
@@ -18,30 +18,30 @@ from config import RAW_DATA_DIR
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
 
-BASE_SITE_URL = "https://dishtv.biztechnosys.com/"
+BASE_SITE_URL = "https://dishtv.live/"
 
-# Key curated seed URLs on dishtv.biztechnosys.com
+# Key curated seed URLs on dishtv.live
 DISH_TV_TARGET_URLS = [
-    "https://dishtv.biztechnosys.com/",
-    "https://dishtv.biztechnosys.com/Get-Help",
-    "https://dishtv.biztechnosys.com/ContactUs",
-    "https://dishtv.biztechnosys.com/Get-a-Connection",
-    "https://dishtv.biztechnosys.com/Products",
-    "https://dishtv.biztechnosys.com/Products/Dish-HD",
-    "https://dishtv.biztechnosys.com/Products/DishTV-STB-Dongle",
-    "https://dishtv.biztechnosys.com/Products/DishTV-KEY"
+    "https://dishtv.live/",
+    "https://dishtv.live/Get-Help",
+    "https://dishtv.live/ContactUs",
+    "https://dishtv.live/Get-a-Connection",
+    "https://dishtv.live/Products",
+    "https://dishtv.live/Products/Dish-HD",
+    "https://dishtv.live/Products/DishTV-STB-Dongle",
+    "https://dishtv.live/Products/DishTV-KEY"
 ]
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
     "Accept-Language": "en-US,en;q=0.9",
-    "Referer": "https://dishtv.biztechnosys.com/"
+    "Referer": "https://dishtv.live/"
 }
 
 
 class DishTVCrawler:
-    """Crawler to fetch DISH TV public web content from https://dishtv.biztechnosys.com/ and extract structured data."""
+    """Crawler to fetch DISH TV public web content from https://dishtv.live/ and extract structured data."""
 
     def __init__(self, cache_dir: str = str(RAW_DATA_DIR), base_url: str = BASE_SITE_URL):
         self.cache_dir = cache_dir
@@ -229,7 +229,7 @@ class DishTVCrawler:
     def crawl_all(self, urls: Optional[List[str]] = None, force_refresh: bool = False, auto_discover: bool = True) -> List[Dict[str, Any]]:
         target_urls = urls or DISH_TV_TARGET_URLS
         if auto_discover:
-            logger.info("Discovering all internal URLs on https://dishtv.biztechnosys.com/...")
+            logger.info("Discovering all internal URLs on https://dishtv.live/...")
             target_urls = self.discover_internal_urls(target_urls)
 
         logger.info(f"Starting crawl of {len(target_urls)} DISH TV URLs from {self.base_url}...")
